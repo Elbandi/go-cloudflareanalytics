@@ -19,7 +19,7 @@ import (
 type Client struct {
 	// Cloudflare GraphQL Analytics API URL.
 	// Exported to future-proof the structure against Cloudflare-side changes.
-	Endpoint   *url.URL
+	Endpoint *url.URL
 
 	httpClient *http.Client
 	httpHeader *http.Header
