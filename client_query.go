@@ -8,6 +8,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"io"
+	"io/ioutil"
 	"net/http"
 
 	schema "github.com/ricardbejarano/go-cloudflareanalytics/schemas/v4"
@@ -37,7 +38,7 @@ func (c *Client) Query(query string, variables map[string]string) (*schema.Data,
 		Method: http.MethodPost,
 		URL:    c.Endpoint,
 		Header: *c.httpHeader,
-		Body:   io.NopCloser(io.Reader(bytes.NewReader(requestBody))),
+		Body:   ioutil.NopCloser(io.Reader(bytes.NewReader(requestBody))),
 	})
 	if err != nil {
 		return nil, []error{err}
