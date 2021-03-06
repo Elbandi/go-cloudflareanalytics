@@ -11,7 +11,7 @@ import (
 	"io/ioutil"
 	"net/http"
 
-	schema "github.com/ricardbejarano/go-cloudflareanalytics/schemas/v4"
+	schema "github.com/Elbandi/go-cloudflareanalytics/schemas/v4"
 )
 
 type requestBody struct {

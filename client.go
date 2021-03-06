@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"net/url"
 
-	schema "github.com/ricardbejarano/go-cloudflareanalytics/schemas/v4"
+	schema "github.com/Elbandi/go-cloudflareanalytics/schemas/v4"
 )
 
 // Reusable structure holding the required metadata for talking to Cloudflare's
